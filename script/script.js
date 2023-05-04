@@ -46,13 +46,13 @@ button1.onclick = function() {
 
 
 button2.onclick = function() {
-    if (ans2.value == 1) {
+    if (ans2.value == 3) {
         ans2.setAttribute('disabled', true);
         button2.setAttribute('disabled', true);
     }
 
-    if (ans2.value == 1) {
-        point+=1
+    if (ans2.value == 3) {
+        point+=2
     }
     else {
         ans2.setAttribute('disabled', true);

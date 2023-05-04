@@ -166,7 +166,8 @@ img {
 }
 /* ------------------------------------------ */
 .main {
-  margin-top: 80px;
+  margin-top: 73px;
+  background-color: rgba(204, 204, 204, 0.3);
 }
 .flex-main-margin {
   margin-bottom: 200px;
@@ -175,6 +176,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 
 }
 
@@ -192,6 +194,7 @@ img {
   padding: 20px;
   border-radius: 3px; 
   transition: all ease 0.3s;
+  margin-left: 30px;
 }
 .text-main:hover {
   cursor: pointer;
@@ -285,7 +288,7 @@ img {
   margin-right: 50px;
 }
 .main-text-block:hover {
-  box-shadow: -15px 15px 20px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1, 1.1);
 }
 .main-text-block-item {
   font-size: 18px;
