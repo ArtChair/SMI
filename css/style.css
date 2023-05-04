@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* -----------ОБНУЛЕНИЕ--------------- */
+.contaner {
+  max-width: 1240px;
+  margin: 0 auto;
+} 
+
+.header {
+  height: 85vh;
+
+}
+.header-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 9px 0;
+}
+
+.image-icon {
+  margin-right: 50px;
+}
+.nav-item {
+  margin-right: 30px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: black;
+  position: relative;
+}
+.nav-item::after{
+  content: '';
+  display: inline-block;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(194, 38, 38);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 200ms ease;
+}
+.nav-item:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition: 300ms ease;
+}
+.header-main {
+  background-color: #F0EFEB;
+  height: 100%;
+  
+}
+.header-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-header-main {
+  width: 500px;
+  /* border: 2px solid black; */
+  text-align: "justify";
+}
+.img-header-main {
+  float: right;
+  margin-top: 60px ;
+}
+.img-header-main-item {
+  width: 500px;
+  box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.4);
+} 
+.title-header-main {
+  text-align: center;
+  font-size: 2.3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(52, 52, 52);
+}
+.subtitle-header-main {
+  font-size: 1.2em;
+  /* font-weight: 500; */
+  /* text-align: justify;  */
+  font-style: italic;
+  
+}
+img {
+  border-radius: 3px;
+}
+/* ------------------------------------------ */
+.main {
+  margin-top: 80px;
+}
+.flex-main-margin {
+  margin-bottom: 200px;
+}
+.flex-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.img-main {
+}
+.img-main-item {
+  width: 700px;
+}
+.text-main {
+  width: 458px;
+  background-color: rgba(36, 35, 34, 0.7);
+  /* border: 1px solid black; */
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  padding: 20px;
+  border-radius: 3px; 
+  transition: all ease 0.3s;
+}
+.text-main:hover {
+  cursor: pointer;
+  box-shadow: 5px -5px 20px 10px rgba(0, 0, 0, 0.4);
+  background-color: rgb(40, 40, 40);
+  border: 3px dashed rgb(255, 255, 255);
+  width: 462px;
+}
+
+
+
+.text-main-title {
+  font-size: 3em;
+  text-align: center;
+
+  
+}
+.text-main-subtitle:hover {
+  /* box-shadow: 5px 5px 5px white; */
+}
+
+.text-main-reverse {
+  width: 558px;
+  /* background-color: rgb(55, 54, 51, 0.7); */
+  /* border: 1px solid black; */
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  margin-top: -120px;
+  transition-property: all;
+  transition: all ease 0.8s;
+}
+.text-main-reverse:hover{
+  transform: translateY(7%);
+}
+.flex-main-reverse {
+  flex-direction: row-reverse
+}
+.text-main-subtitle-reverse{
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.flex-main-reverse {
+  background-color: rgba(176, 176, 176, 0.611);
+  height: 500px;
+}
+.text-main-reverse {
+  background-color: rgb(168, 168, 168);
+}
+
+
+.main-flex-item {
+  display: flex;
+  /* background-color: #ccc; */
+  align-items: center;
+  justify-content: space-around;  
+  padding-top: 70px;
+}
+.main-enemy-block {
+  background-color: #cf993a;
+  width: 270px;
+  height: 420px;
+  margin-left: 100px
+}
+.main-enemy-block {
+  transform: skewX(-8deg);
+}
+.main-title-block {
+  background-color: #292d33;
+  width: 407px;
+  height: 200px;
+  margin: 120px 0 0 50px;
+  padding: 40px;
+}
+.main-title-block-item {
+  color: white;
+  font-size: 1.7em;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 40px; */
+}
+.main-text-block {
+  width: 400px;
+  background-color: rgb(44, 44, 44);;
+  padding: 20px;
+  border-radius: 4px;
+  
+  transition: 0.5s;
+  margin-right: 50px;
+}
+.main-text-block:hover {
+  box-shadow: -15px 15px 20px 20px rgba(0, 0, 0, 0.4);
+}
+.main-text-block-item {
+  font-size: 18px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.537);
+  width: 100%;
+  height: 120px;
+}
+.text-test{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  background-color: #0002;
+}
+
+
+.end {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* ---------- */
+.custom-btn {
+  margin-top: 20px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+  box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
