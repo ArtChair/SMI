@@ -29,86 +29,110 @@ const button5 = document.getElementById('btn5');
 // const button = document.getElementById('btn');
 
 button1.onclick = function() {
-    if (ans1.value == 2) {
-        ans1.setAttribute('disabled', true);
-        button1.setAttribute('disabled', true);
-    }
-    if (ans1.value == 2) {
-        point+=2
-    }
-    else {
-        ans1.setAttribute('disabled', true);
-        button1.setAttribute('disabled', true);
-    }
-    console.log(point)
-    resultActive.innerHTML = point
+    if (ans1.value > 0 && ans1.value < 4) {
+        if (ans1.value == 2) {
+            ans1.setAttribute('disabled', true);
+            button1.setAttribute('disabled', true);
+        }
+        if (ans1.value == 2) {
+            point+=2
+        }
+        
+        else {
+            ans1.setAttribute('disabled', true);
+            button1.setAttribute('disabled', true);
+            
+        }
+        console.log(point)
+        resultActive.innerHTML = point
+        button1.style.backgroundColor = 'gray'
+    }   
 }
 
 
 button2.onclick = function() {
-    if (ans2.value == 3) {
-        ans2.setAttribute('disabled', true);
-        button2.setAttribute('disabled', true);
-    }
+    if (ans2.value > 0 && ans2.value < 4) {
+        if (ans2.value == 3) {
+            ans2.setAttribute('disabled', true);
+            button2.setAttribute('disabled', true);
+            
+        }
 
-    if (ans2.value == 3) {
-        point+=2
-    }
-    else {
-        ans2.setAttribute('disabled', true);
-        button2.setAttribute('disabled', true);
-    }
-    console.log(point)
-    resultActive.innerHTML = point
+        if (ans2.value == 3) {
+            point+=2
+        }
+        else {
+            ans2.setAttribute('disabled', true);
+            button2.setAttribute('disabled', true);
+            
+        }
+        console.log(point)
+        resultActive.innerHTML = point
+        button2.style.backgroundColor = 'gray'
+    }    
 }
 
 button3.onclick = function() {
-    if (ans3.value == 1) {
-        ans3.setAttribute('disabled', true);
-        button3.setAttribute('disabled', true);
-    }
-    if (ans3.value == 1) {
-        point+=2
-    }
-    else {
-        ans3.setAttribute('disabled', true);
-        button3.setAttribute('disabled', true);
-    }
-    console.log(point)
-    resultActive.innerHTML = point
+    if (ans3.value > 0 && ans3.value < 4) {
+        if (ans3.value == 1) {
+            ans3.setAttribute('disabled', true);
+            button3.setAttribute('disabled', true);
+            
+        }
+        if (ans3.value == 1) {
+            point+=2
+        }
+        else {
+            ans3.setAttribute('disabled', true);
+            button3.setAttribute('disabled', true);
+            
+        }
+        console.log(point)
+        resultActive.innerHTML = point
+        button3.style.backgroundColor = 'gray'
+    }    
 }
 
 button4.onclick = function() {
-    if (ans4.value == 3) {
-        ans4.setAttribute('disabled', true);
-        button4.setAttribute('disabled', true);
+    if (ans4.value > 0 && ans4.value < 4) {
+        if (ans4.value == 3) {
+            ans4.setAttribute('disabled', true);
+            button4.setAttribute('disabled', true);
+            
+        }
+        if (ans4.value == 3) {
+            point+=3
+        }
+        else {
+            ans4.setAttribute('disabled', true);
+            button4.setAttribute('disabled', true);
+            
+        }
+        console.log(point)
+        resultActive.innerHTML = point
+        button4.style.backgroundColor = 'gray'
     }
-    if (ans4.value == 3) {
-        point+=3
-    }
-    else {
-        ans4.setAttribute('disabled', true);
-        button4.setAttribute('disabled', true);
-    }
-    console.log(point)
-    resultActive.innerHTML = point
 }
 
 button5.onclick = function() {
-    if (ans5.value == 1) {
-        ans5.setAttribute('disabled', true);
-        button5.setAttribute('disabled', true);
-        
-    }
-    if (ans5.value == 1) {
-        point+=2
-    }
-    else {
-        ans5.setAttribute('disabled', true);
-        button5.setAttribute('disabled', true);
-    }
-    console.log(point)
-    resultActive.innerHTML = point
+    if (ans5.value > 0 && ans5.value < 4) {
+        if (ans5.value == 1) {
+            ans5.setAttribute('disabled', true);
+            button5.setAttribute('disabled', true);
+            
+            
+        }
+        if (ans5.value == 1) {
+            point+=2
+        }
+        else {
+            ans5.setAttribute('disabled', true);
+            button5.setAttribute('disabled', true);
+        }
+        console.log(point)
+        resultActive.innerHTML = point
+        button1.style.backgroundColor = 'gray'
+    }    
 }
 
 resultActive.innerHTML = point

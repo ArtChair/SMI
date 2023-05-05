@@ -86,11 +86,37 @@ select {
     max-width: 1280px;
     margin: 0 auto;
 }
+label {
+    font-size: 1.5em;
+    color: #000000;
+}
+li {
+  font-size: 18px;
+  color: white;
+}
+span {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button {
+  background-color: #ff6e07;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .question {
     border: 4px solid rgb(17, 238, 35);
     border-radius: 6px;
     margin: 15px 0;
     padding: 5px;
+    background-color: #6868f1;
     /* text-align: center; */
 }
 .menu {
@@ -103,19 +129,10 @@ select {
     list-style-type: none;
     margin-left: 40px;
 }
-/* .result {
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    padding: 15px;
-    border: 3px solid #0000cc;
-    border-radius: 10px;
-    color: #0000cc;
-    display: none;
+.result-active {
+  color: blue;
 }
-.result:target {
-    display: block;
-} */
+
 #zatemnenie {
     background: rgba(102, 102, 102, 0.5);
     width: 100%;
