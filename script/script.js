@@ -131,7 +131,7 @@ button5.onclick = function() {
         }
         console.log(point)
         resultActive.innerHTML = point
-        button1.style.backgroundColor = 'gray'
+        button5.style.backgroundColor = 'gray'
     }    
 }
 

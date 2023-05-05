@@ -88,6 +88,10 @@ select {
   height: 85vh;
 
 }
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgb(243, 243, 243) 100%);
+}
 .header-line {
   display: flex;
   align-items: center;
@@ -126,7 +130,7 @@ select {
   transition: 300ms ease;
 }
 .header-main {
-  background-color: #F0EFEB;
+  background-color: #fefcdb;
   height: 100%;
   
 }
@@ -167,7 +171,7 @@ img {
 /* ------------------------------------------ */
 .main {
   margin-top: 73px;
-  background-color: rgba(204, 204, 204, 0.3);
+  background-color: rgb(255, 255, 255);
 }
 .flex-main-margin {
   margin-bottom: 200px;
@@ -181,6 +185,7 @@ img {
 }
 
 .img-main {
+  margin: 30px 0 0 -30px;
 }
 .img-main-item {
   width: 700px;
@@ -376,3 +381,31 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   width:100%;
   transition:800ms ease all;
 }
+
+.btn-test {
+  animation-duration: 2000ms;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 600px;
+  }
+  25% {
+    margin-right: 125px;
+  }
+  50% {
+    margin-right: 600px;
+  }
+  75%{
+    margin-right: 250px;
+  }
+  90%{
+    margin-left: 600px;
+  }
+  to {
+    margin-right: 800px;
+  }
+}
+
